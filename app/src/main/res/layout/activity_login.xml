@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg_vc">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_144"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/loginlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="@string/Login"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loginlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textColor="#000"
+        android:inputType="textCapSentences"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:textColor="#000"
+        android:inputType="textPassword"/>
+    <requestFocus />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:id="@+id/login_button"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Login"
+        android:background="#c4c4c4"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
